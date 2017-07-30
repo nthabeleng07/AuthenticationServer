@@ -31,7 +31,7 @@ public class SystemMenu
         do {
             System.out.println("\nPlease select an option: ");
             System.out.println("1: Register");
-            System.out.println("0: Login");
+            System.out.println("2: Login");
             option = input.nextInt();
             input.nextLine();
             processInput(option);
@@ -47,11 +47,11 @@ public class SystemMenu
             case 1:
                 register();
                 break;
-            case 0:
-                System.out.println("Please log in with your Username and Password.\n");
+            case 2:
+                System.out.println("Please log in with your Username and Password.");
                 break;
             default:
-                System.out.println("Incorrect Input: Please enter a value from 0-1.");
+                System.out.println("Incorrect Input: Please enter a value from 1-2.");
         }
     }
 
