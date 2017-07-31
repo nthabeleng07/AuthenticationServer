@@ -25,7 +25,7 @@ public class SystemMenu
 
     public void displayMenu()
     {
-        int option = 0;
+        int option = 2;
         System.out.println("Welcome to the Authentication Server");
         System.out.println("--------------------------");
         do {
@@ -35,7 +35,7 @@ public class SystemMenu
             option = input.nextInt();
             input.nextLine();
             processInput(option);
-        } while (option != 0);
+        } while (option != 2);
     }
 
     private void processInput(int i)
